@@ -66,7 +66,7 @@
         <button class="key num-key" onclick="btnAction(()=>pressNum(9))">9</button>
         <button class="key white" style="font-size:32px;" onclick="btnAction(()=>addToTotal())">＋</button>
         <button id="tax10-btn" class="key blue" onclick="btnAction(()=>setTax(1.10,'tax10-btn'))">10%</button>
-        <button id="btn-tax-hold" class="key gray" onclick="btnAction(()=>toggleFeature('taxHold'))">税保持</button>
+        <button id="btn-tax-hold" class="key gray" onclick="btnAction(()=>toggleFeature('taxHold'))">税率保持</button>
         <button id="btn-standby" class="key blue" onclick="btnAction(()=>toggleStandby())">待機</button>
 
         <button class="key white" onclick="btnAction(()=>quickAdd(100))">+100</button>
@@ -75,7 +75,7 @@
         <button class="key num-key" onclick="btnAction(()=>pressNum(6))">6</button>
         <button id="percent-btn" class="key white" onclick="btnAction(()=>setPercentMode())">％</button>
         <button id="tax8-btn" class="key blue" onclick="btnAction(()=>setTax(1.08,'tax8-btn'))">8%</button>
-        <button id="btn-tax-display" class="key gray" onclick="btnAction(()=>toggleFeature('taxDisplay'))">税表示</button>
+        <button id="btn-tax-display" class="key gray" onclick="btnAction(()=>toggleFeature('taxDisplay'))">税込表示</button>
         <button class="key gray" onclick="btnAction(()=>startMultiple())">複数</button>
 
         <button class="key white" onclick="btnAction(()=>quickAdd(50))">+50</button>
@@ -84,7 +84,7 @@
         <button class="key num-key" onclick="btnAction(()=>pressNum(3))">3</button>
         <button class="key teal" onclick="btnAction(()=>finalizeTotal())">支</button>
         <button class="key gray" onclick="btnAction(()=>applyDiscount())">割引</button>
-        <button id="btn-disc-display" class="key gray" onclick="btnAction(()=>toggleFeature('discDisplay'))">割表示</button>
+        <button id="btn-disc-display" class="key gray" onclick="btnAction(()=>toggleFeature('discDisplay'))">割引表示</button>
         <button class="key red" onclick="btnAction(()=>triggerEmergency())">緊急</button>
 
         <button id="pause-btn" class="key orange" onclick="btnAction(()=>togglePause(), true)">休止</button>
@@ -93,7 +93,7 @@
         <button class="key red" style="font-size:24px;" onclick="btnAction(()=>clearInput())">消</button>
         <button class="key green" onclick="btnAction(()=>processCheckout())">釣</button>
         <button id="btn-confirm" class="key gray" onclick="btnAction(()=>handleConfirm())">確認</button>
-        <button id="btn-cong-status" class="key gray" onclick="btnAction(()=>notifyCongestionToggle())">混雑</button>
+        <button id="btn-cong-status" class="key gray" onclick="btnAction(()=>notifyCongestionToggle())">混雑状態</button>
         <button class="key red" onclick="btnAction(()=>stopAllAlerts(), true)">×</button>
     </div>
 
@@ -243,7 +243,7 @@
         let txt = grandTotal.toLocaleString() + "円";
         if (features.taxDisplay) txt += "<span style='font-size:40px'>(税込)</span>";
         if (features.discDisplay && totalDiscountAmount > 0) {
-            txt += `<div style="font-size:30px; color:var(--red); margin-top:10px;">${totalDiscountAmount.toLocaleString()}円割引</div>`;
+            txt += `<div style="font-size:30px; color:var(--red); margin-top:10px;">${totalDiscountAmount.toLocaleString()}円割引済</div>`;
         }
         mainDisp.innerHTML = txt; 
         subDisp.innerText = (grandTotal < subtotal) ? "不足額" : "合計";
