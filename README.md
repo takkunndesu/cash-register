@@ -1,6 +1,10 @@
 # cash-register
 
-ただのレジです。ご自由にお使いください。geminiに作らせたのでバグがあるかも...?
+<img width="1918" height="910" alt="Image" src="https://github.com/user-attachments/assets/6d1a4f32-f7af-49b9-90bb-919f7e602a2b" />
+ただのレジです。ご自由にお使いください。geminiに作らせたのでバグがあるかもしれません。
+文化祭やお祭り出店などで活用できるかと思います。また、税率計算、割引等も可能です、
+簡易的と言っておきながらも地味～に高機能ですので使っていただければと思います。
+詳しい機能は以下のマニュアルをご覧ください。
 
 
 
@@ -12,9 +16,11 @@
 
 __１金額を入力__
 「5⇨0⇨+」で50円加算できます。また、右のショートカットボタンを押すとワンタップで金額を加算できます。金額を加算し終わったら「支」を押します。
+<img width="579" height="242" alt="Image" src="https://github.com/user-attachments/assets/8e640d2b-670d-4e33-8e0d-24aada258a1e" />
 
 __２お金をもらう__
 自動で合計金額が表示されるのでお金をもらいます。もらった金額をテンキーで入力して「釣」ボタンを押します。
+<img width="1919" height="906" alt="Image" src="https://github.com/user-attachments/assets/5a7c6d0f-c88d-4273-9fb5-1f8599459a49" />
 
 __３おつりをわたす__
 自動でおつりが出るのでその金額を渡します。
@@ -33,6 +39,8 @@ __４終わり__
 
 ### ◯休止動作
 
+<img width="1919" height="906" alt="Image" src="https://github.com/user-attachments/assets/e7c03f2b-d636-4d3d-9d73-6172473514eb" />
+
 **★休止にする**
 オレンジの「休止」ボタンを押す。
 
@@ -40,6 +48,8 @@ __４終わり__
 白の「再開」ボタンを押す。
 
 ### 〇税率・％設定
+
+<img width="345" height="242" alt="Image" src="https://github.com/user-attachments/assets/81c1536b-f87b-4e06-ae3e-f9be089d2490" />
 
 青い税率のボタンを押してから金額を入力し＋を押すと、自動で消費税を加算します。毎回設定が解除されますが、「税率保持」をオンにしておけば解除されません。
 
@@ -50,6 +60,8 @@ __４終わり__
 税込表示の設定をオンにしておくと、合計金額を表示する際に(税込)という表示が出ます。
 
 ### 〇割引き設定
+
+<img width="579" height="239" alt="Image" src="https://github.com/user-attachments/assets/e01b88b4-b477-471e-a317-074b511e5cac" />
 
 テンキーで割引分の金額を入力して「割引」を押します。
 例：1⇨0⇨0⇨割引
@@ -63,11 +75,15 @@ __４終わり__
 
 ### 〇混雑モード
 
+<img width="213" height="102" alt="Image" src="https://github.com/user-attachments/assets/23707502-de4e-4bbb-b1bb-92dd595720c7" />
+
 混雑状態ボタンでオン・オフできます。
 
 これをオンにすると読み上げ無し、お預かり額・おつり表示時間短縮、お礼のメッセージ表示省略を行います。
 
 ### 〇複数個登録
+
+<img width="803" height="239" alt="Image" src="https://github.com/user-attachments/assets/af087fd3-b8ee-4378-b532-723255184217" />
 
 金額入力後「+」を押す前に「複数」を押し、個数を入力すると自動的に複数個登録されます。
 
@@ -75,15 +91,22 @@ __４終わり__
 
 ### 〇待機モード
 
+<img width="1919" height="908" alt="Image" src="https://github.com/user-attachments/assets/6f6cc907-1f6e-4dfe-a44d-db5f2410f66a" />
+
 待機ボタンを押してオンにできます。レジから離れるときに便利です。
 お客様側のボタンに呼び出しボタンが出てきて、おされるとベルが鳴るようになっています。
 ベルは「確認」を押すことで止まり、通常通りレジができます。
 
 ### 〇緊急モード
 
+<img width="1919" height="909" alt="Image" src="https://github.com/user-attachments/assets/3a8704eb-8e12-4f9e-8d7b-2f487367c534" />
+
 「緊急」を押すことでオンにできます。✖ボタンが押されるまで警告音と警告表示が出続けます。
 現状押したところで特に何もありません。
 
 ### 〇お預かり額不足時
+
+<img width="1919" height="910" alt="image" src="https://github.com/user-attachments/assets/d14a0e85-422c-42b2-bb17-2e3ba66ffcfe" />
+
 
 警告表示が出ます。「確認」を押して続けてください。お客さんから不足分をもらうようにしてください。
